@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <a href="home.html" class="logo">Portfolio</a>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+
+            <li class="dropdown">
+                <a href="others.html">Others ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="others.html#education">Education</a></li>
+                    <li><a href="others.html#skills">Skills</a></li>
+                    <li><a href="others.html#excellence">Excellence</a></li>
+                    <li><a href="others.html#hobbies">Hobbies</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="section contact-section">
+    <h1 class="section-title">Contact <span>Me</span></h1>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+
+            <p>
+                Thank you for visiting my personal portfolio!</p><p>
+                Feel free to contact me.
+            </p>
+
+            <p><strong>Email:</strong> paulajant.maleon@sjasarq.com</p>
+            <p><strong>Location:</strong> 021 Atienza Subdivision, Sariaya Quezon, Philippines</p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+
+            <label for="name">Your Name</label>
+            <input type="text" id="name"
+                   placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5"
+                      placeholder="Write your message"
+                      required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+            <p id="formMessage"></p>
+        </form>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <p>&copy; <span id="year"></span> My Personal Portfolio.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
